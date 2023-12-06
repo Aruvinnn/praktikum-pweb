@@ -1,4 +1,4 @@
-const Perkerja = [
+const Pekerja = [
     {
         id:"1",
         Nama:"Alvin Wijaya",
@@ -15,4 +15,4 @@ const Perkerja = [
 
 ]
 
-export default Perkerja;
+export default Pekerja;
