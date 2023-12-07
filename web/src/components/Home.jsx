@@ -5,7 +5,6 @@ import { Link, useNavigate } from 'react-router-dom';
 
 function Home() {
   const [pekerja, setPekerja] = useState([]);
-  const history = useNavigate();
 
   useEffect(() => {
     fetch('http://localhost:3001/api/pekerja')
@@ -17,7 +16,7 @@ function Home() {
   const handleEdit = (id, nama, status) => {
     localStorage.setItem('Nama', nama);
     localStorage.setItem('Status', status);
-    localStorage.setItem('Id', id);
+    localStorage.setItem('Id', id);  
   };
 
   const handleDelete = (id) => {
